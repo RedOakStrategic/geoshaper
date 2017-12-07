@@ -6,7 +6,7 @@
 
 ```
 library(devtools)
-install_github("RedOakStrategic/geoshaper/")
+install_github("RedOakStrategic/geoshaper")
 ```
 
 ## Attributions 
