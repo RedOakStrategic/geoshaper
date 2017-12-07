@@ -5,9 +5,10 @@
 ## Installation
 
 ```
-devtools::install_git('https://gitlab.com/dainaandries/geoshaper.git')
+library(devtools)
+install_github("RedOakStrategic/geoshaper/")
 ```
 
 ## Attributions 
 
-Code for `findLocations` function based on [StackOverflow solution](https://stackoverflow.com/questions/42528400/plot-brushing-or-accessing-drawn-shape-geometry-for-spatial-subsets-in-shiny-lea) to question "Plot brushing or accessing drawn shape geometry for spatial subsets in Shiny Leaflet" , posted March 1, 2017.
+Code for `findLocations` function based on [StackOverflow solution](https://stackoverflow.com/questions/42528400/plot-brushing-or-accessing-drawn-shape-geometry-for-spatial-subsets-in-shiny-lea) to question "Plot brushing or accessing drawn shape geometry for spatial subsets in Shiny Leaflet", posted March 1, 2017.
