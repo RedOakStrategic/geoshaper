@@ -1,19 +1,10 @@
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Cmd + Shift + B'
-#   Check Package:             'Cmd + Shift + E'
-#   Test Package:              'Cmd + Shift + T'
-
 #' Find locations inside a polygon, square, or circle drawn with leaflet.extras drawing tools on a Shiny Leaflet map.
 #'
 #' @param shape Shiny input (input$MAPID_draw_new_feature), representing shape drawn on the map by the user.
 #' @param location_coordinates A SpatialPointsDataFrame containing coordinates and ids for all map locations.
 #' @param location_id_colname Column name from location_coordinates containing desired names or ids for set of locations returned.
 #' @return A vector of location ids.
+#' @import sp
 #' @examples
 #' mock_input.map_feature <- list(type = "Feature"
 #'                          , properties = list(`_leaflet_id`= 13477, feature_type = "rectangle")
@@ -28,8 +19,6 @@
 #' findLocations(shape = mock_input.map_feature
 #'                      , location_coordinates = coords
 #'                      , location_id_colname = "locationID")
-
-
 findLocations <- function(shape, location_coordinates, location_id_colname) {
 
   # derive polygon coordinates and feature_type from shape input
