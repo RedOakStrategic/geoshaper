@@ -30,7 +30,7 @@ server <- function(input, output) {
   data_of_click <- reactiveValues(clickedMarker = list())
 
   coordinates <- reactive({
-    SpatialPointsDataFrame(airports[, c("Longitude", "Latitude")], airports)
+    sf::st_as_sf(airports, coords = c("Longitude", "Latitude"))
   })
 
   # base map
