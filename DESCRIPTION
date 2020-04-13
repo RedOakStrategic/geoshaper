@@ -17,4 +17,4 @@ Imports:
     leaflet.extras
 Suggests: testthat,
          tibble
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
